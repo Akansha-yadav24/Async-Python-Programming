@@ -1,4 +1,4 @@
-# Async Python Coding Patterns Cheat Sheet (Ultra Packed)
+# Async Python Coding Patterns Cheat Sheet
 
 > **15 Essential Async Patterns Every Python Backend, AI, FastAPI & MCP Developer Should Know**
 
