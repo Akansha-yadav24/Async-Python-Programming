@@ -1,9 +1,9 @@
-# 🚀 Async Python Programming Roadmap (2026)
+# Async Python Programming Roadmap (2026)
 > Learn Async Python from Beginner to Advanced with hands-on projects.
 
 ---
 
-# 📍 Prerequisites
+#  Prerequisites
 
 Before learning Async Programming, make sure you know:
 
