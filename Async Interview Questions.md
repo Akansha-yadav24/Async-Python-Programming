@@ -1,10 +1,10 @@
-# 🚀 Async Python Interview Cheat Sheet (Ultra Packed)
+#  Async Python Interview Cheat Sheet
 
 > **50+ Most Asked Async Python Interview Questions & Answers (Python 3.11+)**
 
 ---
 
-# ⭐ Beginner Level
+#  Beginner Level
 
 ### 1. What is Asynchronous Programming?
 
@@ -82,7 +82,7 @@ The scheduler that executes, pauses and resumes coroutines.
 
 ---
 
-# ⭐ Intermediate Level
+#  Intermediate Level
 
 ### 11. Blocking vs Non-blocking?
 
@@ -197,7 +197,7 @@ Placeholder for a value available later.
 
 ---
 
-# ⭐ Advanced Level
+#  Advanced Level
 
 ### 26. What is a Race Condition?
 
@@ -308,7 +308,7 @@ Each solves different problems.
 
 ---
 
-# ⭐ Scenario Questions
+#  Scenario Questions
 
 ### 41. Download 1000 images quickly?
 
@@ -374,7 +374,7 @@ Use Async.
 
 ---
 
-# ⭐ Code Output Questions
+#  Code Output Questions
 
 ### Q51
 
@@ -427,7 +427,7 @@ time.sleep(2)
 
 Blocks Event Loop?
 
-✅ Yes.
+-- Yes.
 
 ---
 
@@ -443,7 +443,7 @@ Sequential?
 
 ---
 
-# ⭐ Common Interview Mistakes
+#  Common Interview Mistakes
 
 ❌ Forgetting `await`
 
@@ -461,7 +461,7 @@ Sequential?
 
 ---
 
-# ⭐ Libraries to Mention
+#  Libraries to Mention
 
 - asyncio
 - aiohttp
@@ -475,7 +475,7 @@ Sequential?
 
 ---
 
-# ⭐ Real-world Use Cases
+#  Real-world Use Cases
 
 ✔ FastAPI
 
@@ -499,7 +499,7 @@ Sequential?
 
 ---
 
-# ⭐ Interview Rapid Fire
+#  Interview Rapid Fire
 
 | Question | Answer |
 |----------|--------|
@@ -521,7 +521,7 @@ Sequential?
 
 ---
 
-# ⭐ One-Liner Revision
+#  One-Liner Revision
 
 ```
 async → Coroutine
