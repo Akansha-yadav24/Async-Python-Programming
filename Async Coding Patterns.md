@@ -1,10 +1,10 @@
-# 🚀 Async Python Coding Patterns Cheat Sheet (Ultra Packed)
+# Async Python Coding Patterns Cheat Sheet (Ultra Packed)
 
 > **15 Essential Async Patterns Every Python Backend, AI, FastAPI & MCP Developer Should Know**
 
 ---
 
-# 🧠 Pattern Selection Guide
+#  Pattern Selection Guide
 
 | Situation | Pattern |
 |-----------|----------|
@@ -26,9 +26,8 @@
 
 ---
 
-# 1️⃣ Fire & Forget
-
-### ✅ Use When
+# 1. Fire & Forget
+### Use When
 Background tasks that don't block the main flow.
 
 ### Flow
@@ -58,9 +57,9 @@ Examples:
 
 ---
 
-# 2️⃣ Gather Pattern
+# 2. Gather Pattern
 
-### ✅ Use When
+###  Use When
 
 Run multiple independent operations together.
 
@@ -86,7 +85,7 @@ Examples:
 
 ---
 
-# 3️⃣ Producer – Consumer
+# 3. Producer – Consumer
 
 One coroutine produces work.
 
@@ -115,7 +114,7 @@ Examples
 
 ---
 
-# 4️⃣ Worker Pool
+# 4. Worker Pool
 
 Multiple workers process jobs.
 
@@ -145,7 +144,7 @@ Examples
 
 ---
 
-# 5️⃣ Pipeline Pattern
+# 5. Pipeline Pattern
 
 Output becomes next input.
 
@@ -177,7 +176,7 @@ Examples
 
 ---
 
-# 6️⃣ Fan-Out / Fan-In
+# 6. Fan-Out / Fan-In
 
 Split work.
 
@@ -209,7 +208,7 @@ Examples
 
 ---
 
-# 7️⃣ Semaphore Pattern
+# 7. Semaphore Pattern
 
 Limit concurrency.
 
@@ -239,7 +238,7 @@ Examples
 
 ---
 
-# 8️⃣ Lock Pattern
+# 8. Lock Pattern
 
 Prevent race conditions.
 
@@ -277,7 +276,7 @@ Examples
 
 ---
 
-# 9️⃣ Event Pattern
+# 9. Event Pattern
 
 Wait until something happens.
 
@@ -311,7 +310,7 @@ Examples
 
 ---
 
-# 🔟 Timeout Pattern
+# 10. Timeout Pattern
 
 Avoid waiting forever.
 
@@ -332,7 +331,7 @@ Examples
 
 ---
 
-# 1️⃣1️⃣ Retry with Backoff
+# 11. Retry with Backoff
 
 ```
 Call API
@@ -382,7 +381,7 @@ Examples
 
 ---
 
-# 1️⃣2️⃣ Race Pattern
+# 12. Race Pattern
 
 Take the fastest response.
 
@@ -414,7 +413,7 @@ Examples
 
 ---
 
-# 1️⃣3️⃣ Async Generator
+# 13. Async Generator
 
 Stream data gradually.
 
@@ -435,7 +434,7 @@ Examples
 
 ---
 
-# 1️⃣4️⃣ Connection Pool
+# 14. Connection Pool
 
 Reuse connections.
 
@@ -461,7 +460,7 @@ Examples
 
 ---
 
-# 1️⃣5️⃣ Cancellation Pattern
+# 15. Cancellation Pattern
 
 Stop running tasks safely.
 
@@ -479,7 +478,7 @@ Examples
 
 ---
 
-# ⭐ Pattern Comparison
+#  Pattern Comparison
 
 | Pattern | Best For |
 |----------|----------|
@@ -500,9 +499,9 @@ Examples
 
 ---
 
-# ⭐ Pattern by Industry
+#  Pattern by Industry
 
-### 🌐 Backend
+###  Backend
 
 ✔ Gather
 
@@ -514,7 +513,7 @@ Examples
 
 ---
 
-### 🤖 AI
+###  AI
 
 ✔ Gather
 
@@ -526,7 +525,7 @@ Examples
 
 ---
 
-### 📡 MCP Servers
+###  MCP Servers
 
 ✔ Queue
 
@@ -538,7 +537,7 @@ Examples
 
 ---
 
-### 🕷 Web Scraping
+###  Web Scraping
 
 ✔ Semaphore
 
@@ -562,7 +561,7 @@ Examples
 
 ---
 
-### 📊 Data Engineering
+### Data Engineering
 
 ✔ Pipeline
 
@@ -572,27 +571,27 @@ Examples
 
 ---
 
-# 🚫 Common Mistakes
+#  Common Mistakes
 
-❌ Unlimited `create_task()`
+x Unlimited `create_task()`
 
-❌ No timeout
+x No timeout
 
-❌ No retry logic
+x No retry logic
 
-❌ Missing semaphore
+x Missing semaphore
 
-❌ Blocking with `time.sleep()`
+x Blocking with `time.sleep()`
 
-❌ Forgetting to cancel tasks
+x Forgetting to cancel tasks
 
-❌ Ignoring exceptions
+x Ignoring exceptions
 
-❌ Sharing mutable state without locks
+x Sharing mutable state without locks
 
 ---
 
-# ⚡ Interview One-Liners
+#  Interview One-Liners
 
 - **Fire & Forget** → Background work
 - **Gather** → Run tasks concurrently
@@ -611,7 +610,7 @@ Examples
 
 ---
 
-# 🏆 Async Architecture Roadmap
+#  Async Architecture Roadmap
 
 ```
 Coroutines
@@ -656,5 +655,5 @@ AI Agents
 MCP Servers
       │
       ▼
-Production Systems 🚀
+Production Systems 
 ```
