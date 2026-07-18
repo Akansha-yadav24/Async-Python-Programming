@@ -1,10 +1,10 @@
-# 🚀 Async FastAPI Guide (Ultra Packed)
+#  Async FastAPI Guide (Ultra Packed)
 
 > **One-Page Cheat Sheet for Building High-Performance FastAPI Applications (Python 3.11+)**
 
 ---
 
-# 🏗 FastAPI Request Lifecycle
+#  FastAPI Request Lifecycle
 
 ```
 HTTP Request
@@ -36,7 +36,7 @@ JSON Response
 
 ---
 
-# ⚡ Why FastAPI Uses Async
+#  Why FastAPI Uses Async
 
 Traditional Flask
 
@@ -63,7 +63,7 @@ Thousands of concurrent connections
 
 ---
 
-# 📦 Basic Async Route
+# Basic Async Route
 
 ```python
 from fastapi import FastAPI
@@ -77,7 +77,7 @@ async def home():
 
 ---
 
-# ❌ Sync Route
+# X Sync Route
 
 ```python
 @app.get("/")
@@ -87,11 +87,11 @@ def home():
 
 ✔ Works
 
-❌ Blocks if long-running I/O is performed.
+X Blocks if long-running I/O is performed.
 
 ---
 
-# ✅ Async Route
+#  Async Route
 
 ```python
 @app.get("/")
@@ -108,7 +108,7 @@ Recommended for:
 
 ---
 
-# 🌐 Async HTTP Request
+# Async HTTP Request
 
 ```python
 import httpx
@@ -123,11 +123,11 @@ Avoid
 requests.get()
 ```
 
-❌ Blocking
+ Blocking
 
 ---
 
-# 🗄 Async Database
+#  Async Database
 
 ```python
 async with AsyncSession() as db:
@@ -143,7 +143,7 @@ Popular Drivers
 
 ---
 
-# 📁 Async File Handling
+#  Async File Handling
 
 ```python
 import aiofiles
@@ -154,7 +154,7 @@ async with aiofiles.open(file) as f:
 
 ---
 
-# 🚀 Run Multiple Tasks
+#  Run Multiple Tasks
 
 ```python
 results = await asyncio.gather(
@@ -211,7 +211,7 @@ async def users(
 
 ---
 
-# 📡 Path Parameters
+#  Path Parameters
 
 ```python
 @app.get("/users/{id}")
@@ -221,7 +221,7 @@ async def user(id:int):
 
 ---
 
-# ❓ Query Parameters
+#  Query Parameters
 
 ```python
 @app.get("/search")
@@ -231,7 +231,7 @@ async def search(q:str):
 
 ---
 
-# 📦 Request Body
+#  Request Body
 
 ```python
 class User(BaseModel):
@@ -244,7 +244,7 @@ async def create(user:User):
 
 ---
 
-# 📤 Response Model
+#  Response Model
 
 ```python
 @app.get(
@@ -262,7 +262,7 @@ Benefits
 
 ---
 
-# 🛡 Exception Handling
+#  Exception Handling
 
 ```python
 raise HTTPException(
@@ -273,7 +273,7 @@ raise HTTPException(
 
 ---
 
-# 📄 Status Codes
+#  Status Codes
 
 ```python
 status.HTTP_200_OK
@@ -287,7 +287,7 @@ status.HTTP_500_INTERNAL_SERVER_ERROR
 
 ---
 
-# 🔑 Authentication
+#  Authentication
 
 Common Methods
 
@@ -301,7 +301,7 @@ Common Methods
 
 ---
 
-# 🌍 CORS
+#  CORS
 
 ```python
 CORSMiddleware
@@ -311,7 +311,7 @@ Allows frontend access.
 
 ---
 
-# ⚙ Middleware
+#  Middleware
 
 Examples
 
@@ -325,7 +325,7 @@ Examples
 
 ---
 
-# 📈 Pagination
+#  Pagination
 
 ```
 ?page=1
@@ -335,7 +335,7 @@ Examples
 
 ---
 
-# 🔍 Filtering
+#  Filtering
 
 ```
 ?name=John
@@ -345,7 +345,7 @@ Examples
 
 ---
 
-# 📤 File Upload
+#  File Upload
 
 ```python
 UploadFile
@@ -353,7 +353,7 @@ UploadFile
 
 ---
 
-# 📥 File Download
+#  File Download
 
 ```python
 FileResponse()
@@ -361,7 +361,7 @@ FileResponse()
 
 ---
 
-# 📡 WebSockets
+#  WebSockets
 
 ```python
 @app.websocket("/ws")
@@ -381,7 +381,7 @@ Applications
 
 ---
 
-# 🔄 Streaming Response
+# Streaming Response
 
 ```python
 StreamingResponse()
@@ -399,7 +399,7 @@ Examples
 
 ---
 
-# 🧠 Lifespan Events
+#  Lifespan Events
 
 ```python
 @app.on_event("startup")
@@ -419,7 +419,7 @@ Use For
 
 ---
 
-# 🚦 Connection Pool
+#  Connection Pool
 
 ```
 FastAPI
@@ -437,7 +437,7 @@ Never create a new database connection for every request.
 
 ---
 
-# ⚡ Performance Tips
+#  Performance Tips
 
 ✔ Use async routes
 
@@ -459,7 +459,7 @@ Never create a new database connection for every request.
 
 ---
 
-# 🚫 Common Mistakes
+#  Common Mistakes
 
 ❌ Using `requests`
 
@@ -483,7 +483,7 @@ Never create a new database connection for every request.
 
 ---
 
-# 🔥 Production Stack
+#  Production Stack
 
 ```
 Client
@@ -509,7 +509,7 @@ External APIs
 
 ---
 
-# 🤖 AI Architecture
+#  AI Architecture
 
 ```
 User
@@ -527,7 +527,7 @@ FastAPI
 
 ---
 
-# 🧩 FastAPI + Async Patterns
+#  FastAPI + Async Patterns
 
 | Pattern | Use Case |
 |---------|----------|
@@ -544,7 +544,7 @@ FastAPI
 
 ---
 
-# 📚 Essential Libraries
+#  Essential Libraries
 
 | Library | Purpose |
 |----------|---------|
@@ -561,7 +561,7 @@ FastAPI
 
 ---
 
-# 💼 Common Interview Questions
+#  Common Interview Questions
 
 ✔ Why is FastAPI faster than Flask?
 
@@ -585,7 +585,7 @@ FastAPI
 
 ---
 
-# 🎯 FastAPI Learning Flow
+#  FastAPI Learning Flow
 
 ```
 HTTP Basics
@@ -630,5 +630,5 @@ Caching
 Production Deployment
       │
       ▼
-AI APIs & MCP Servers 🚀
+AI APIs & MCP Servers 
 ```
