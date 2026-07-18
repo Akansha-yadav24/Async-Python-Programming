@@ -1,10 +1,10 @@
-# ⚡ Async Python Cheat Sheet (Ultra Packed)
+#  Async Python Cheat Sheet
 
 > **One-page reference for Modern Python Async Programming (Python 3.11+)**
 
 ---
 
-## 🧠 Core Concepts
+##  Core Concepts
 
 | Term | Meaning |
 |------|---------|
@@ -19,7 +19,7 @@
 
 ---
 
-# 🚦 Sync vs Async
+#  Sync vs Async
 
 ```
 SYNC
@@ -48,7 +48,7 @@ Total = 3 sec
 
 ---
 
-# 🔑 Keywords
+#  Keywords
 
 ```python
 async
@@ -64,7 +64,7 @@ await fetch()
 
 ---
 
-# 🔄 Event Loop
+#  Event Loop
 
 ```
 Coroutine
@@ -86,7 +86,7 @@ Resume Previous Task
 
 ---
 
-# ⚙️ Basic Syntax
+#  Basic Syntax
 
 ```python
 import asyncio
@@ -99,13 +99,13 @@ asyncio.run(hello())
 
 ---
 
-# ⏳ Waiting
+#  Waiting
 
 ```python
 await asyncio.sleep(2)
 ```
 
-❌ Don't use
+X Don't use
 
 ```python
 time.sleep(2)
@@ -113,7 +113,7 @@ time.sleep(2)
 
 ---
 
-# 🚀 Create Tasks
+#  Create Tasks
 
 ```python
 task = asyncio.create_task(fetch())
@@ -123,7 +123,7 @@ Run independently.
 
 ---
 
-# 📦 Run Multiple Tasks
+#  Run Multiple Tasks
 
 ```python
 await asyncio.gather(
@@ -135,7 +135,7 @@ await asyncio.gather(
 
 ---
 
-# ⏱ Timeout
+#  Timeout
 
 ```python
 await asyncio.wait_for(fetch(), timeout=5)
@@ -143,7 +143,7 @@ await asyncio.wait_for(fetch(), timeout=5)
 
 ---
 
-# 📋 Wait for Completion
+#  Wait for Completion
 
 ```python
 done, pending = await asyncio.wait(tasks)
@@ -151,7 +151,7 @@ done, pending = await asyncio.wait(tasks)
 
 ---
 
-# 🏁 First Finished
+# First Finished
 
 ```python
 async for result in asyncio.as_completed(tasks):
@@ -160,7 +160,7 @@ async for result in asyncio.as_completed(tasks):
 
 ---
 
-# 🔐 Lock
+#  Lock
 
 ```python
 lock = asyncio.Lock()
@@ -173,7 +173,7 @@ Prevents race conditions.
 
 ---
 
-# 🚦 Semaphore
+#  Semaphore
 
 ```python
 sem = asyncio.Semaphore(5)
@@ -186,7 +186,7 @@ Limits concurrent tasks.
 
 ---
 
-# 📨 Queue
+#  Queue
 
 ```python
 queue = asyncio.Queue()
@@ -202,7 +202,7 @@ Producer → Consumer
 
 ---
 
-# 📂 Async Files
+#  Async Files
 
 ```python
 import aiofiles
@@ -213,7 +213,7 @@ async with aiofiles.open("file.txt") as f:
 
 ---
 
-# 🌐 Async HTTP
+#  Async HTTP
 
 ```python
 import aiohttp
@@ -225,7 +225,7 @@ async with aiohttp.ClientSession() as session:
 
 ---
 
-# 🗄 Async Database
+#  Async Database
 
 ```python
 asyncpg
@@ -234,7 +234,7 @@ SQLAlchemy Async
 
 ---
 
-# ⚡ Async FastAPI
+#  Async FastAPI
 
 ```python
 @app.get("/")
@@ -244,7 +244,7 @@ async def home():
 
 ---
 
-# 🔄 Async Iteration
+#  Async Iteration
 
 ```python
 async for item in stream():
@@ -253,7 +253,7 @@ async for item in stream():
 
 ---
 
-# 📦 Async Context Manager
+#  Async Context Manager
 
 ```python
 async with connection:
@@ -262,7 +262,7 @@ async with connection:
 
 ---
 
-# 🎯 Common Functions
+#  Common Functions
 
 | Function | Purpose |
 |----------|---------|
@@ -278,7 +278,7 @@ async with connection:
 
 ---
 
-# 📚 Popular Libraries
+#  Popular Libraries
 
 - asyncio
 - aiohttp
@@ -293,31 +293,31 @@ async with connection:
 
 ---
 
-# 💼 Real-World Uses
+#  Real-World Uses
 
-✅ FastAPI APIs
+- FastAPI APIs
 
-✅ AI Agents
+- AI Agents
 
-✅ MCP Servers
+- MCP Servers
 
-✅ Web Scraping
+- Web Scraping
 
-✅ Chat Applications
+- Chat Applications
 
-✅ Discord Bots
+- Discord Bots
 
-✅ Telegram Bots
+- Telegram Bots
 
-✅ Background Workers
+- Background Workers
 
-✅ Notification Systems
+- Notification Systems
 
-✅ Streaming APIs
+- Streaming APIs
 
 ---
 
-# ❌ Common Mistakes
+# X Common Mistakes
 
 ```python
 await my_function()
@@ -331,7 +331,7 @@ await my_function()
 my_function()
 ```
 
-❌ Forgot `await`
+X Forgot `await`
 
 ---
 
@@ -339,7 +339,7 @@ my_function()
 time.sleep(5)
 ```
 
-❌ Blocks Event Loop
+X Blocks Event Loop
 
 Use
 
@@ -353,7 +353,7 @@ await asyncio.sleep(5)
 requests.get()
 ```
 
-❌ Blocking HTTP
+X Blocking HTTP
 
 Use
 
@@ -369,7 +369,7 @@ for url in urls:
     await fetch(url)
 ```
 
-❌ Sequential
+X Sequential
 
 Use
 
@@ -379,17 +379,17 @@ await asyncio.gather(*tasks)
 
 ---
 
-# 🚫 Don't Use Async For
+#  Don't Use Async For
 
-❌ Heavy Matrix Computations
+X Heavy Matrix Computations
 
-❌ Image Processing
+X Image Processing
 
-❌ Machine Learning Training
+X Machine Learning Training
 
-❌ Video Encoding
+X Video Encoding
 
-❌ CPU-heavy Loops
+X CPU-heavy Loops
 
 Use:
 
@@ -400,7 +400,7 @@ Use:
 
 ---
 
-# 🔥 Async Design Patterns
+#  Async Design Patterns
 
 ✔ Fire & Forget
 
@@ -422,7 +422,7 @@ Use:
 
 ---
 
-# 🧩 Interview One-Liners
+#  Interview One-Liners
 
 - `async` defines a coroutine.
 - `await` pauses a coroutine without blocking the thread.
@@ -436,7 +436,7 @@ Use:
 
 ---
 
-# 🏆 Async Learning Flow
+#  Async Learning Flow
 
 ```
 def
